@@ -4,7 +4,7 @@ var connection;
 
 // "add on" in heroku use JawsDB which creates a remote database
 if (process.env.JAWSDB_URL) {
-  connection.mysql.createConnection(process.env.JAWSDB_URL);
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
   connection = mysql.createConnection({
     port: 3000,
@@ -14,7 +14,6 @@ if (process.env.JAWSDB_URL) {
     database: "burgers_db"
   });
 };
-
 
 
 // Make connection.
