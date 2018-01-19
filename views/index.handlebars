@@ -10,15 +10,8 @@
   {{/each}}
 </ul>
 
-<h2>Cats that are sleepy!</h2>
+<h2>Devoured!</h2>
 
-<ul>
-  {{#each burgers}}
-    {{#if devoured}}
-      {{!-- {{> burgers/burger-block devoured==false}} --}}
-    {{/if}}
-  {{/each}}
-</ul>
 
 <h2>Order a Burger</h2>
 <form class="create-form">
@@ -28,11 +21,6 @@
     <input type="text" id="ca" name="name">
   </div>
 
-  <div class="form-group">
-    <label for="sleepy">Hungry?</label><br>
-    <input type="radio" name="devour" value="1" checked> Hungry!<br>
-    <input type="radio" name="devour" value="0"> Full
-  </div>
 
-  <button type="submit">Add Burger</button>
+  <button type="submit">Submit Burger</button>
 </form>
